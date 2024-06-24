@@ -1,0 +1,126 @@
+
+.header-contain {
+    background: #000;
+    position: relative;
+    padding:100px 0px 155px 0px;
+    background-image:url('../../../assets/header-vector.png');
+    background-position: center 140%;
+    background-repeat: repeat-x;
+    background-size:auto 300px;
+    animation: fadeIn 2s linear;
+    overflow: hidden;
+    @media (max-width:991.99px){
+    padding: 45px 0px 115px 0px;
+    background-position: center 112%;
+    background-size: auto 187px;
+    }
+    img {
+        position: absolute;
+        left: 0px;
+        top: 5%;
+        max-width: max(17vw, 150px);
+        
+        @media (max-width:767px){
+            top: 3%;
+            max-width: max(17vw, 124px);
+        }
+        @media (max-width:405px){
+            top: 1%;
+            max-width: max(17vw, 100px);
+        }
+    }
+    .header-wrapper{
+        max-width:950px;
+        margin:0 auto;
+        h1 {
+            font-size: max(2.8vw,25px);
+            margin-bottom: 18px;
+            font-weight:bold;
+            span {
+                color: #ffc905;
+            }
+        }
+        p {
+            color: #F7F7F7;
+            font-size: 15px;
+            line-height: 24px;
+        }
+    } 
+    .header-formWrapper {
+        background: #e0b0004f;
+        border: 1px solid #ffc90575;
+        padding: 20px;
+        border-radius: 6px;
+        box-shadow: rgb(241 190 5 / 33%) 0px 0px 10px;
+        color: #fff;
+        margin-top: 30px;
+    }
+    .header-formWrapper h3 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom:18px;
+    }
+    .header-formWrapper input,
+    .header-formWrapper select {
+        height: 40px;
+        width: 100%;
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        padding: 10px;
+        font-size: 15px;
+        &::placeholder{
+            color:#a3a3a3;
+        }
+    }
+    .header-formWrapper{
+        select option{
+            color:#000;
+        }
+        form label {
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        button {
+            background: #ffc905;
+            padding: 8px 35px;
+            border-radius: 8px;
+            font-weight: 500;
+            margin-top: 15px;
+            outline: none;
+            border: 0px;
+            font-size: 15px;
+            transition: 0.3s all;
+            &:hover{
+                transform: scale(1.04);
+                background: #d9aa02;
+            }
+            &:active {
+                transform: scale(1);
+            }
+        }
+
+    } 
+
+
+}
+
+
+.basic-multi-select .select__control {
+    height: 40px;
+    background: transparent;
+}
+.basic-multi-select  .select__input-container {height: 40px;}
+.basic-multi-select .select__value-container {
+    height: 40px;
+}
+.basic-multi-select .select__placeholder {
+    margin-top: -7px;
+}
+.basic-multi-select {
+    color: #000;
+}
+.select__multi-value {
+    background: #ffc905;
+}

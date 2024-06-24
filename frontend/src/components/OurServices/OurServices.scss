@@ -1,0 +1,58 @@
+
+.our-services-section{
+    padding:50px 0px;
+    background:#FFF8DF;
+    position: relative;
+    img.leftTop {
+        position: absolute;
+        top: -10%;
+        left: 5%;
+        width: max(6vw,50px);
+        animation:upDown 3s linear infinite ;
+    }
+    img.rightTop {
+        position: absolute;
+        top: -2px;
+        right: 0;
+        width: max(30vw, 300px);
+    }
+
+    .service-box {
+        border: 1px solid #FFC905;
+        text-align: center;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: rgba(0,0,0,0.085) 0px 5px 20px;
+    
+        img {
+            width: 95px;
+            height: 95px;
+            object-fit: contain;
+        }
+        h3 {
+            font-size: 20px;
+            max-width: 210px;
+            margin: 10px auto 0px;
+            line-height: 25px;
+            font-weight: 500;
+        }
+    }
+
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    50% {
+        transform: translateY(20px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

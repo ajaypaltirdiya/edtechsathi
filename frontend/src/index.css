@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+}
+body{
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  scroll-behavior: smooth;;
+}
+h2{
+    font-size: max(2.3vw,25px);
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+h2.color-secondary {
+  color: #ffc727;
+}
+p{
+  color:#595959;
+  font-size:15px;
+  line-height:24px;
+  font-weight:500;
+}
+p.error {
+  color: #ffc905 !important;
+  font-size: 10px !important;
+  font-weight: 400;
+  margin-bottom: 0px !important;
+}
+button.swal2-confirm {
+  background: #000000 !important;
+  padding: 8px 25px;
+  border-radius:8px !important;;
+}
+header{
+  background: #000;
+}
+
+a.primary-btn {
+  text-decoration: none;
+  border: 1px solid #575757;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 8px;
+  background: #171717;
+  transition: 0.3s all;
+}
+a.primary-btn:hover {
+  background: #4c462f;
+}
+@keyframes fadeIn {
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
